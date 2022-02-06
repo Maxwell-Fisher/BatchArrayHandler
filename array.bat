@@ -1,4 +1,10 @@
 ::This script was made by Max Fisher
+
+:defineSetup
+	set defaultIntArray=•0123456789aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”–—˜™š›œžŸ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüý
+	set defaultCharArray=•0123456789aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”–—˜™š›œžŸ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüý
+::
+
 :mainScript
 	@if /I "%1%2%3%4%5%6%7%8%9" == "" (echo No input&exit /b) %= Error case for no input =%
 	@if /I "%1%2%3%4%5%6%7%8%9" == "/?" (call :helpPage&exit /b) else (@if "%1%2%3%4%5%6%7%8%9" == "help" call :helpPage&exit /b) %= Prints the help page on either `/?` or `help` =%
